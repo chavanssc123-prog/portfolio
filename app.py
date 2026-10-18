@@ -46,7 +46,7 @@ if IS_PRODUCTION:
     app.config["ADMIN_USERNAME"] = admin_username
     app.config["ADMIN_PASSWORD_HASH"] = generate_password_hash(admin_password)
 else:
-    app.config["ADMIN_USERNAME"] = os.environ.get("ADMIN_USERNAME", "Rohan")
+    app.config["ADMIN_USERNAME"] = os.environ.get("ADMIN_USERNAME", "Rohan dalve")
     app.config["ADMIN_PASSWORD_HASH"] = generate_password_hash(
         os.environ.get("ADMIN_PASSWORD", "Rohan@2005")
     )
